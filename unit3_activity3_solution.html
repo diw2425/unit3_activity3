@@ -11,155 +11,161 @@
 </head>
 
 <body class="bg-light">
-  <div class="container-fluid p-0 d-flex flex-column  min-vh-100">
+  <div class="container-fluid d-flex flex-column  min-vh-100">
 
-    <header class="bg-primary-subtle row align-items-center p-3">
-      <div class="col">
-        <h1 class="display-2">Online Store</h1>
-        <p class="lead ms-2 fst-italic">Your favorite place to shop</p>
-      </div>
-      <div class="col-auto">
-        <button class="btn btn-success btn-lg d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart me-2"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-          </svg>
-          View Cart
-        </button>
-      </div>
-    </header>
+    <div class="row">
+      <header class="bg-primary-subtle p-3 d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="display-2">Online Store</h1>
+          <p class="lead ms-2 fst-italic">Your favorite place to shop</p>
+        </div>
+        <div>
+          <button class="btn btn-success btn-lg d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart me-2"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+            View Cart
+          </button>
+        </div>
+      </header>
+    </div>
 
     <div class="row flex-grow-1">
-      <aside class="sidebar ps-3 pt-2 bg-success-subtle col-4 col-md-3">
-        <h2 class="display-6 text-center">Categories</h2>
-        <ul class="list-unstyled">
-          <li class="mb-2 d-flex align-items-center"><i class="bi bi-phone mx-1 fs-3"></i><a href="#electronics"
-              class="fs-5 link-offset-2 link-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Electronics</a>
-          </li>
-          <li class="mb-2 d-flex align-items-center"><i class="bi bi-person-arms-up mx-1 fs-3"></i><a href="#clothing"
-              class="fs-5 link-offset-2 link-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Clothing</a>
-          </li>
-          <li class="mb-2 d-flex align-items-center"><i class="bi bi-book mx-1 fs-3"></i><a href="#books"
-              class="fs-5 link-offset-2 link-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Books</a>
-          </li>
-          <li class="mb-2 d-flex align-items-center"><i class="bi bi-house-heart mx-1 fs-3"></i><a href="#home-garden"
-              class="fs-5 link-offset-2 link-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Home
-              & Garden</a></li>
-        </ul>
-      </aside>
-      <main class="px-4 pb-5 col-8 col-md-9 mb-5">
-        <h2 class="text-center display-6 mb-4">Featured Products</h2>
-        <section>
-          <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
-            <div class="col">
-              <article class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="card-title fs-4">Product 1</h5>
-                    <p class="card-text">$20.00</p>
-                    <div class="text-center">
-                      <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
-                        <svg class="bi me-2" width="16" height="16" fill="currentColor">
-                          <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
-                        </svg>
-                        Add to cart
-                      </button>
-                    </div>
-                </div>
-              </article>
+      <div class="col-4 col-md-3 bg-success-subtle">
+        <aside class="ps-3 pt-2">
+          <h2 class="display-6 text-center">Categories</h2>
+          <ul class="list-unstyled">
+            <li class="mb-2 d-flex align-items-center"><i class="bi bi-phone mx-1 fs-3"></i><a href="#electronics"
+                class="fs-5 link-offset-2 link-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Electronics</a>
+            </li>
+            <li class="mb-2 d-flex align-items-center"><i class="bi bi-person-arms-up mx-1 fs-3"></i><a href="#clothing"
+                class="fs-5 link-offset-2 link-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Clothing</a>
+            </li>
+            <li class="mb-2 d-flex align-items-center"><i class="bi bi-book mx-1 fs-3"></i><a href="#books"
+                class="fs-5 link-offset-2 link-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Books</a>
+            </li>
+            <li class="mb-2 d-flex align-items-center"><i class="bi bi-house-heart mx-1 fs-3"></i><a href="#home-garden"
+                class="fs-5 link-offset-2 link-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover">Home
+                & Garden</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="col-8 col-md-9">
+        <main class="px-4 pt-2 pb-5">
+          <h2 class="text-center display-6 mb-4">Featured Products</h2>
+          <section>
+            <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+              <div class="col">
+                <article class="card">
+                  <img src="https://via.placeholder.com/150" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title fs-4">Product 1</h5>
+                      <p class="card-text">$20.00</p>
+                      <div class="text-center">
+                        <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                          <svg class="bi me-2" width="16" height="16" fill="currentColor">
+                            <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
+                          </svg>
+                          Add to cart
+                        </button>
+                      </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col">
+                <article class="card">
+                  <img src="https://via.placeholder.com/150" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title fs-4">Product 2</h5>
+                      <p class="card-text">$15.00</p>
+                      <div class="text-center">
+                        <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                          <svg class="bi me-2" width="16" height="16" fill="currentColor">
+                            <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
+                          </svg>
+                          Add to cart
+                        </button>
+                      </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col">
+                <article class="card">
+                  <img src="https://via.placeholder.com/150" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title fs-4">Product 3</h5>
+                      <p class="card-text">$25.00</p>
+                      <div class="text-center">
+                        <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                          <svg class="bi me-2" width="16" height="16" fill="currentColor">
+                            <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
+                          </svg>
+                          Add to cart
+                        </button>
+                      </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col">
+                <article class="card">
+                  <img src="https://via.placeholder.com/150" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title fs-4">Product 4</h5>
+                      <p class="card-text">$10.00</p>
+                      <div class="text-center">
+                        <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                          <svg class="bi me-2" width="16" height="16" fill="currentColor">
+                            <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
+                          </svg>
+                          Add to cart
+                        </button>
+                      </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col">
+                <article class="card">
+                  <img src="https://via.placeholder.com/150" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title fs-4">Product 5</h5>
+                      <p class="card-text">$40.00</p>
+                      <div class="text-center">
+                        <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                          <svg class="bi me-2" width="16" height="16" fill="currentColor">
+                            <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
+                          </svg>
+                          Add to cart
+                        </button>
+                      </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col">
+                <article class="card">
+                  <img src="https://via.placeholder.com/150" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title fs-4">Product 6</h5>
+                      <p class="card-text">$55.00</p>
+                      <div class="text-center">
+                        <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                          <svg class="bi me-2" width="16" height="16" fill="currentColor">
+                            <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
+                          </svg>
+                          Add to cart
+                        </button>
+                      </div>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="col">
-              <article class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="card-title fs-4">Product 2</h5>
-                    <p class="card-text">$15.00</p>
-                    <div class="text-center">
-                      <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
-                        <svg class="bi me-2" width="16" height="16" fill="currentColor">
-                          <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
-                        </svg>
-                        Add to cart
-                      </button>
-                    </div>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="card-title fs-4">Product 3</h5>
-                    <p class="card-text">$25.00</p>
-                    <div class="text-center">
-                      <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
-                        <svg class="bi me-2" width="16" height="16" fill="currentColor">
-                          <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
-                        </svg>
-                        Add to cart
-                      </button>
-                    </div>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="card-title fs-4">Product 4</h5>
-                    <p class="card-text">$10.00</p>
-                    <div class="text-center">
-                      <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
-                        <svg class="bi me-2" width="16" height="16" fill="currentColor">
-                          <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
-                        </svg>
-                        Add to cart
-                      </button>
-                    </div>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="card-title fs-4">Product 5</h5>
-                    <p class="card-text">$40.00</p>
-                    <div class="text-center">
-                      <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
-                        <svg class="bi me-2" width="16" height="16" fill="currentColor">
-                          <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
-                        </svg>
-                        Add to cart
-                      </button>
-                    </div>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="card-title fs-4">Product 6</h5>
-                    <p class="card-text">$55.00</p>
-                    <div class="text-center">
-                      <button class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
-                        <svg class="bi me-2" width="16" height="16" fill="currentColor">
-                          <use xlink:href="assets/bootstrap-icons.svg#bag-plus" />
-                        </svg>
-                        Add to cart
-                      </button>
-                    </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-      </main>
+          </section>
+        </main>
+      </div>
     </div>
-    <footer class="bg-dark text-light p-3">
-      <div class="container-fluid">
+    <div class="row">
+      <footer class="bg-dark text-light p-3">
         <div class="row">
           <div class="col-md-6">
             <p class="lead">Contact us</p>
@@ -169,15 +175,14 @@
               <label for="message" class="form-label mt-3">Message</label>
               <textarea class="form-control mb-2" placeholder="Enter your message" rows="4"></textarea>
               <p class="form-text text-light">Maximum 200 characters</p>
-              <button class="btn btn-primary">Send</button> 
+              <button class="btn btn-primary">Send</button>
             </form>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <p class="lead text-center text-md-end">&copy; 2024 Online Store. All rights reserved.</p>
           </div>
-      </div>
-
-    </footer>
+      </footer>
+    </div>
 
   </div>
 </body>
